@@ -14,7 +14,6 @@ public class CustomReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-
         String intentString = intent.getAction();
         String data = "";
         if (intentString != null){
