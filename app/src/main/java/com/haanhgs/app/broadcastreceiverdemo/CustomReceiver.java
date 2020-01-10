@@ -12,6 +12,8 @@ public class CustomReceiver extends BroadcastReceiver {
         this.model = model;
     }
 
+    //filter intent so no need for add receiver in manifest
+    //add to manifest when in need to open app
     @Override
     public void onReceive(Context context, Intent intent) {
         String intentString = intent.getAction();
