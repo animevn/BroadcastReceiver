@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BroadcastReceiverDemo</string>
+    <string name="app_name">Broadcast Receiver</string>
 
     <string name="bnSend">Send Broadcast</string>
     <string name="tvMessage">Wait for message</string>

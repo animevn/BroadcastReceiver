@@ -1,4 +1,4 @@
-package com.haanhgs.app.broadcastreceiverdemo;
+package com.haanhgs.app.broadcast;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean toggleStatus = false;
 
     private void init(){
-        model = ViewModelProviders.of(this).get(Model.class);
+        model = new ViewModelProvider(this).get(Model.class);
         observer = string -> tvMessage.setText(string);
         receiver = new CustomReceiver();
         receiver.setModel(model);

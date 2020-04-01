@@ -1,4 +1,4 @@
-package com.haanhgs.app.broadcastreceiverdemo;
+package com.haanhgs.app.broadcast;
 
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
