@@ -10,11 +10,11 @@ import android.widget.ToggleButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.lifecycle.ViewModelProviders;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+//received system broadcast and custom broadcast
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.bnToggle)
